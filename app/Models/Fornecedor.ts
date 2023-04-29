@@ -31,6 +31,9 @@ export default class Fornecedor extends BaseModel {
   @column()
   public tecidoId: number
 
+  @column()
+  public image: string
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

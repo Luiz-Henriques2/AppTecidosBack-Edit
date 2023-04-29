@@ -34,6 +34,7 @@ export default class TecidosController {
       data: tecido,
     }
   }
+
   public async index() {
     const tecidos = await Tecido.query().preload('fornecedors')
 
@@ -51,6 +52,7 @@ export default class TecidosController {
         data: tecido,
     }
   }
+
   public async destroy({ params }: HttpContextContract) {
     const tecido = await Tecido.findOrFail(params.id)
 
@@ -61,6 +63,7 @@ export default class TecidosController {
         data: tecido,
     }
   }
+
   public async update({ params, request, response }: HttpContextContract) {
     const body = request.body()
 
@@ -77,6 +80,12 @@ export default class TecidosController {
     tecido.observacao = body.observacao
     tecido.fornecedor = body.fornecedor
     tecido.fornecedor_id = body.fornecedor_id
+
+    tecido.caracteristica = body.caracteristica
+    tecido.tecnologia = body.tecnologia
+    tecido.favoritar = body.favoritar
+    tecido.prazoentrega = body.prazoentrega
+    tecido.prazodesenvolvimento = body.prazodesenvolvimento
 
  if (tecido.image != body.image || !tecido.image) {
   const image = request.file('image', this.validationOptions)

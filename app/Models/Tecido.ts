@@ -45,6 +45,21 @@ export default class Tecido extends BaseModel {
   @column()
   public fornecedorId: number
 
+  @column()
+  public caracteristica: string
+
+  @column()
+  public tecnologia: string
+
+  @column()
+  public favoritar: Buffer
+
+  @column()
+  public prazoentrega: number
+
+  @column()
+  public prazodesenvolvimento: number
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 
