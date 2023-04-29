@@ -52,7 +52,7 @@ export default class Tecido extends BaseModel {
   public tecnologia: string
 
   @column()
-  public favoritar: Buffer
+  public favoritar: boolean
 
   @column()
   public prazoentrega: number
