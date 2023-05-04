@@ -78,7 +78,6 @@ export default class TecidosController {
     tecido.avista = body.avista
     tecido.prazo = body.prazo
     tecido.observacao = body.observacao
-    tecido.fornecedor = body.fornecedor
     tecido.fornecedor_id = body.fornecedor_id
 
     tecido.caracteristica = body.caracteristica
@@ -86,6 +85,18 @@ export default class TecidosController {
     tecido.favoritar = body.favoritar
     tecido.prazoentrega = body.prazoentrega
     tecido.prazodesenvolvimento = body.prazodesenvolvimento
+
+    tecido.uv = body.uv
+    tecido.dry = body.dry
+    tecido.insect = body.insect
+    tecido.smart = body.smart
+    tecido.defense = body.defense
+    tecido.chlomax = body.chlomax
+    tecido.hydro = body.hydro
+    tecido.eco = body.eco
+    tecido.shield = body.shield
+    tecido.undertech = body.undertech
+    tecido.ultraflex = body.ultraflex
 
  if (tecido.image != body.image || !tecido.image) {
   const image = request.file('image', this.validationOptions)

@@ -55,6 +55,39 @@ export default class Tecido extends BaseModel {
   public favoritar: boolean
 
   @column()
+  public uv: boolean
+
+  @column()
+  public dry: boolean
+
+  @column()
+  public insect: boolean
+
+  @column()
+  public smart: boolean
+
+  @column()
+  public defense: boolean
+
+  @column()
+  public chlomax: boolean
+
+  @column()
+  public hydro: boolean
+
+  @column()
+  public eco: boolean
+
+  @column()
+  public shield: boolean
+
+  @column()
+  public undertech: boolean
+
+  @column()
+  public ultraflex: boolean
+
+  @column()
   public prazoentrega: number
 
   @column()
