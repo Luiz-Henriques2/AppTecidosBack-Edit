@@ -98,6 +98,24 @@ export default class TecidosController {
     tecido.undertech = body.undertech
     tecido.ultraflex = body.ultraflex
 
+    tecido.durabilidade = body.durabilidade
+    tecido.toqueaveludado = body.toqueaveludado
+    tecido.respirabilidade = body.respirabilidade
+    tecido.duplaface = body.duplaface
+    tecido.leveza = body.leveza
+    tecido.altacobertura = body.altacobertura
+    tecido.elasticidade = body.elasticidade
+    tecido.secagemrapida = body.secagemrapida
+    tecido.toquegelado = body.toquegelado
+    tecido.toquemacio = body.toquemacio
+    tecido.toquedebrilho = body.toquedebrilho
+    tecido.zerotransparencia = body.zerotransparencia
+    tecido.naoesgarca = body.naoesgarca
+    tecido.naopinica = body.naopinica
+    tecido.oekotex = body.oekotex
+    tecido.compressao = body.compressao
+    tecido.controledeodor = body.controledeodor
+
  if (tecido.image != body.image || !tecido.image) {
   const image = request.file('image', this.validationOptions)
 

@@ -86,7 +86,58 @@ export default class Tecido extends BaseModel {
 
   @column()
   public ultraflex: boolean
+//-----------------------------------------------------
+@column()
+public durabilidade: boolean
 
+@column()
+public toqueaveludado: boolean
+
+@column()
+public respirabilidade: boolean
+
+@column()
+public duplaface: boolean
+
+@column()
+public leveza: boolean
+
+@column()
+public altacobertura: boolean
+
+@column()
+public elasticidade: boolean
+
+@column()
+public secagemrapida: boolean
+
+@column()
+public toquegelado: boolean
+
+@column()
+public toquemacio: boolean
+
+@column()
+public toquedebrilho: boolean
+
+@column()
+public zerotransparencia: boolean
+
+@column()
+public naoesgarca: boolean
+
+@column()
+public naopinica: boolean
+
+@column()
+public oekotex: boolean
+
+@column()
+public compressao: boolean
+
+@column()
+public controledeodor: boolean
+//-----------------------------------------------------
   @column()
   public prazoentrega: number
 
