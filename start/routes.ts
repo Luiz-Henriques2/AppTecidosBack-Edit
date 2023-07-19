@@ -19,6 +19,7 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
+import 'App/Modules/User/routes'
 
 // HABILITAR CORS
 Route.group(() => {
@@ -27,4 +28,6 @@ Route.group(() => {
 
   Route.resource('/fornecedor', 'FornecedorsController').apiOnly
   
-}).prefix('/api')
+}).prefix('/api').middleware('auth')
+
+Route.post('/login', 'AuthController.login').prefix('/api')
